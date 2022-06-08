@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">TodayList</string>
+    <string name="meed_an_account">Meed an account?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="today_list_logo">Today List Logo</string>
 </resources>
