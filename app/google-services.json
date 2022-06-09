@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "156539558138",
+    "project_id": "today-list-66927",
+    "storage_bucket": "today-list-66927.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:156539558138:android:f1c6522d4c054d00dd1143",
+        "android_client_info": {
+          "package_name": "edu.gcu.todaylist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "156539558138-bfrvbb5fv0abfjl5raj7lbsc7bmjrtnf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxvxeOYHRy-Kxe9h_okKrsUy8Vw6dBF6g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "156539558138-bfrvbb5fv0abfjl5raj7lbsc7bmjrtnf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
