@@ -1,18 +1,135 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.SignIn">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/primary_background">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up_header"
+            android:layout_centerHorizontal="true"
+            android:textSize="60sp"
+            android:textColor="@color/primaryColor"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:id="@+id/tvSignUpHeader"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/oitName"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tvSignUpHeader"
+            android:layout_marginTop="30dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/oitEmail"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/oitName"
+            android:layout_marginTop="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/oitPassword"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/oitEmail"
+            android:layout_marginTop="20dp"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+
+                android:textColorHint="@color/textSecondary" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/oitRePassword"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/re_enter_password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/oitPassword"
+            android:layout_marginTop="20dp"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+
+                android:textColorHint="@color/textSecondary" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/oitRePassword"
+            android:layout_marginHorizontal="100dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/primaryColor"
+            android:text="@string/register"
+            android:textColor="@color/primaryTextColor"/>
+
+        <TextView
+            android:id="@+id/tvSignUpMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnSignUp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:text="@string/already_have_an_account"
+            android:textColor="@color/primaryTextColor"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnSignUp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="7dp"
+            android:layout_toEndOf="@+id/tvSignUpMessage"
+            android:text="@string/sign_in_nav"
+            android:textColor="@color/primaryDarkColor"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+
+</ScrollView>
