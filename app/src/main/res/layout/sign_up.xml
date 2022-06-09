@@ -19,6 +19,8 @@
             android:textSize="60sp"
             android:textColor="@color/primaryColor"
             android:textStyle="bold"
+            android:shadowRadius="30"
+            android:shadowColor="@color/grey"
             android:layout_marginTop="20dp"
             android:id="@+id/tvSignUpHeader"/>
 
@@ -101,7 +103,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/oitRePassword"
             android:layout_marginHorizontal="100dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="30dp"
             android:backgroundTint="@color/primaryColor"
             android:text="@string/register"
             android:textColor="@color/primaryTextColor"/>
@@ -125,7 +127,7 @@
             android:layout_marginTop="7dp"
             android:layout_toEndOf="@+id/tvSignUpMessage"
             android:text="@string/sign_in_nav"
-            android:textColor="@color/primaryDarkColor"
+            android:textColor="#827717"
             android:textStyle="bold" />
 
     </RelativeLayout>
